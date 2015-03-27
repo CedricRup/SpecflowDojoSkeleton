@@ -99,6 +99,10 @@
       <Project>{557B4721-2056-4868-8713-DA9D0B7F2A22}</Project>
       <Name>ApiClient</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{84098A2C-1B53-44F9-AC60-B984009F63E0}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{BA7C72D8-7C67-441D-943B-1E6724FF968C}</Project>
       <Name>Model</Name>

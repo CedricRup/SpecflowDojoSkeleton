@@ -37,7 +37,7 @@ namespace WebApi.App_Start
             builder.RegisterInstance(developpeurStore);
 
             var dummyStore = new DummyStore();
-            dummyStore.Register(new Dummy{Name = "Franklin"});
+            //dummyStore.Register(new Dummy{Name = "Franklin"});
             builder.RegisterInstance(dummyStore);
 
             return builder.Build();

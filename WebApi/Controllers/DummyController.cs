@@ -12,6 +12,7 @@ namespace WebApi.Controllers
         public DummyController(DummyStore dummyStore)
         {
             _dummyStore = dummyStore;
+            _dummyStore.Register(new Dummy{Name = "Franklin"});
         }
 
         public Dummy Get()

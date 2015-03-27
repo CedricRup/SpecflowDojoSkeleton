@@ -1,5 +1,6 @@
 ﻿using System;
 using ApiClient;
+using Database;
 using Model;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
@@ -12,10 +13,17 @@ namespace Specs
     {
         private Dummy _dummy;
 
+        private readonly DummyController _dummyController;
+
+        public DummySteps()
+        {
+            _dummyController = new DummyController(new DummyStore());
+        }
+
         [When(@"je récupère un Dummy")]
         public void QuandJeRecupereUnDummy()
         {
-            _dummy = new ApiClient.ApiClient().GetDummy();
+            _dummy = _dummyController.Get();
         }
 
         [Then(@"le nom du Dummy devrait être '(.*)'")]
