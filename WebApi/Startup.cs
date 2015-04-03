@@ -3,7 +3,6 @@ using System.Web.Http;
 using Microsoft.Owin;
 using Owin;
 using WebApi;
-using WebApi.App_Start;
 
 [assembly: OwinStartup(typeof(Startup))]
 namespace WebApi

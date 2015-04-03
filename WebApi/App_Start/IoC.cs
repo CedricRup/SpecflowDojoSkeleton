@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Net.Http;
-using System.Security.Claims;
-using System.Web;
+﻿using System.Net.Http;
 using System.Web.Http;
 using Autofac;
 using Autofac.Integration.WebApi;
@@ -10,7 +6,7 @@ using Database;
 using Model;
 using WebApi.Controllers;
 
-namespace WebApi.App_Start
+namespace WebApi
 {
     public static class IoC
     {
@@ -36,6 +32,10 @@ namespace WebApi.App_Start
             var developpeurStore = new DeveloppeurStore();
             builder.RegisterInstance(developpeurStore);
 
+            var partieStore = new PartieStore();
+            builder.RegisterInstance(partieStore).AsImplementedInterfaces();
+
+            
             var dummyStore = new DummyStore();
             dummyStore.Register(new Dummy{Name = "Franklin"});
             builder.RegisterInstance(dummyStore);

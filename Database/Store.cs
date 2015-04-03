@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using Model;
 
@@ -34,6 +36,21 @@ namespace Database
 
     public class DeveloppeurStore : Store<Developpeur>
     {
+    }
+
+    public interface IPartieStore
+    {
+        Partie Get(Guid id);
+        IEnumerable<Partie> GetAll();
+        void Register(Partie toRegister);
+    }
+
+    public class PartieStore : Store<Partie>, IPartieStore
+    {
+        public Partie Get(Guid id)
+        {
+            return GetAll().FirstOrDefault(p => p.Id == id);
+        }
     }
 
     public class DummyStore : Store<Dummy>
