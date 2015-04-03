@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Developpeur.cs" />
     <Compile Include="Dummy.cs" />
+    <Compile Include="Equipe.cs" />
     <Compile Include="Partie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Story.cs" />

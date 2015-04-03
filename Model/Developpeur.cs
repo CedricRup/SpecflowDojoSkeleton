@@ -8,5 +8,11 @@ namespace Model
 {
     public class Developpeur
     {
+        public Developpeur(string nom)
+        {
+            Nom = nom;
+        }
+
+        public string Nom { get; set; }
     }
 }

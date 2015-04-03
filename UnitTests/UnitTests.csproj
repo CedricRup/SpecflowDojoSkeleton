@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DummyPartyStore.cs" />
+    <Compile Include="EquipeControllerTest.cs" />
     <Compile Include="PartieControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

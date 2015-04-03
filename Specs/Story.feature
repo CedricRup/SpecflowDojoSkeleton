@@ -5,15 +5,17 @@ Scénario: Quand un développeur travaille sur une story, ca charge de travaille
 	Etant donné les stories suivantes
 	| Intitulé             | Charge |
 	| Souscrire un contrat |     2  |
-	Et l'équipe constituée de 
+	Et l'équipe "A-team" est constituée de 
 	| Nom   |
 	| Alice |
+	Et l'équipe "A-team" travaille sur la partie
+
 	Et que la partie est commencée
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
 	Quand la journée se termine
 	Alors les stories sont dans l'état suivant
 	| Intitulé             | Charge |
-	| Souscrire un contrat |     2  |
+	| Souscrire un contrat |     1  |
 
 Scénario: Une story est terminée lorsque sa charge atteint 0
 
@@ -29,7 +31,7 @@ Scénario: Une story est terminée lorsque sa charge atteint 0
 	Quand la journée se termine
 	Alors les stories sont dans l'état suivant
 	| Intitulé             | Charge |
-	| Souscrire un contrat |     2  |
+	| Déclarer un sinistre |     2  |
 
 
 	   

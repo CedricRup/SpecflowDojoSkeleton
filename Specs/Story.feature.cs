@@ -86,12 +86,14 @@ this.ScenarioSetup(scenarioInfo);
             table2.AddRow(new string[] {
                         "Alice"});
 #line 8
- testRunner.And("l\'équipe constituée de", ((string)(null)), table2, "Et ");
+ testRunner.And("l\'équipe \"A-team\" est constituée de", ((string)(null)), table2, "Et ");
 #line 11
- testRunner.And("que la partie est commencée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line 12
- testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+ testRunner.And("l\'équipe \"A-team\" travaille sur la partie", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 13
+ testRunner.And("que la partie est commencée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line 14
+ testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line 15
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -99,8 +101,8 @@ this.ScenarioSetup(scenarioInfo);
                         "Charge"});
             table3.AddRow(new string[] {
                         "Souscrire un contrat",
-                        "2"});
-#line 14
+                        "1"});
+#line 16
  testRunner.Then("les stories sont dans l\'état suivant", ((string)(null)), table3, "Alors ");
 #line hidden
             this.ScenarioCleanup();
@@ -111,7 +113,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void UneStoryEstTermineeLorsqueSaChargeAtteint0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Une story est terminée lorsque sa charge atteint 0", ((string[])(null)));
-#line 18
+#line 20
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -123,29 +125,29 @@ this.ScenarioSetup(scenarioInfo);
             table4.AddRow(new string[] {
                         "Déclarer un sinistre",
                         "2"});
-#line 20
+#line 22
  testRunner.Given("les stories suivantes", ((string)(null)), table4, "Etant donné ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                         "Nom"});
             table5.AddRow(new string[] {
                         "Alice"});
-#line 24
+#line 26
  testRunner.And("l\'équipe constituée de", ((string)(null)), table5, "Et ");
-#line 27
- testRunner.And("que la partie est commencée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line 28
- testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
 #line 29
+ testRunner.And("que la partie est commencée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line 30
+ testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line 31
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                         "Intitulé",
                         "Charge"});
             table6.AddRow(new string[] {
-                        "Souscrire un contrat",
+                        "Déclarer un sinistre",
                         "2"});
-#line 30
+#line 32
  testRunner.Then("les stories sont dans l\'état suivant", ((string)(null)), table6, "Alors ");
 #line hidden
             this.ScenarioCleanup();
