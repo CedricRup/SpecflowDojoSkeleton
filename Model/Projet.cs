@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace Model
 {
-    public class Partie
+    public class Projet
     {
-        public Partie(DateTime dateDeDebut, DateTime dateDeRelease, IEnumerable<Story> stories)
+        public Projet(string nom,DateTime dateDeDebut, DateTime dateDeRelease, IEnumerable<Story> stories)
         {
+            Nom = nom;
             DateDeRelease = dateDeRelease;
             Stories = stories;
             Date = dateDeDebut;
-            Id = Guid.NewGuid();
         }
 
-        public Guid Id { get; private set; }
         public DateTime DateDeRelease { get; private set; }
         public DateTime Date { get; private set; }
         public IEnumerable<Story> Stories { get; set; }
+        public string Nom { get; set; }
     }
 }

@@ -2,33 +2,43 @@
 	
 Scénario: La partie est gagnée si il n'y a plus de story avant la date de release
 
-	Soit la date du jour au 01/01/2014
-	Et la date de release au 17/08/2014
-	Etant donné les stories suivantes
+	Etant donné le projet 'Crocto' avec les stories suivantes
 	| Intitulé             | Charge |
 	| Souscrire un contrat |     1  |
-	Et l'équipe constituée de 
+	Et la date de démarrage du projet 'Crocto' est au 17/08/2014
+	Et la date de release du projet 'Crocto' est au 17/08/2015
+
+	Et l'équipe 'A-Team' constituée de 
 	| Nom   |
 	| Alice |
+
+	Et l'équipe 'A-Team' travaille sur le projet 'Crocto'
 	
-	Et que la partie est commencée
+	Quand je commence le projet 'Crocto'
+	
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
+	
 	Quand la journée se termine
 	Alors la partie est gagnée
 
 
 Scénario: La partie est perdue si il reste de la charge le jour de la date de release
 
-	Soit la date du jour au 16/08/2014
-	Et la date de release au 17/08/2014
-	Etant donné les stories suivantes
+	Etant donné le projet 'Crocto' avec les stories suivantes
 	| Intitulé             | Charge |
 	| Souscrire un contrat |     2  |
-	Et l'équipe constituée de 
+	Et la date de démarrage du projet 'Crocto' est au 16/08/2015
+	Et la date de release du projet 'Crocto' est au 17/08/2015
+
+	Et l'équipe 'A-Team' constituée de 
 	| Nom   |
 	| Alice |
+
+	Et l'équipe 'A-Team' travaille sur le projet 'Crocto'
 	
-	Et que la partie est commencée
+	Quand je commence le projet 'Crocto'
+	
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
+	
 	Quand la journée se termine
 	Alors la partie est perdue

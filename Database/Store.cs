@@ -38,18 +38,33 @@ namespace Database
     {
     }
 
-    public interface IPartieStore
+    public interface IProjetStore
     {
-        Partie Get(Guid id);
-        IEnumerable<Partie> GetAll();
-        void Register(Partie toRegister);
+        Projet Get(string nom);
+        IEnumerable<Projet> GetAll();
+        void Register(Projet toRegister);
     }
 
-    public class PartieStore : Store<Partie>, IPartieStore
+    public class ProjetStore : Store<Projet>, IProjetStore
     {
-        public Partie Get(Guid id)
+        public Projet Get(string nom)
         {
-            return GetAll().FirstOrDefault(p => p.Id == id);
+            return GetAll().FirstOrDefault(p => p.Nom == nom);
+        }
+    }
+
+    public interface IEquipeStore
+    {
+        Equipe Get(string nom);
+        IEnumerable<Equipe> GetAll();
+        void Register(Equipe toRegister);
+    }
+
+    public class EquipeStore : Store<Equipe>, IEquipeStore
+    {
+        public Equipe Get(string nom)
+        {
+            return GetAll().FirstOrDefault(p => p.NomEquipe == nom);
         }
     }
 

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net;
 using System.Web.Http;
+using Database;
 using Model;
 using NUnit.Framework;
 using WebApi.Controllers;
@@ -22,7 +23,7 @@ namespace UnitTests
         [SetUp]
         public void Setup()
         {
-            _tested = new EquipeController();
+            _tested = new EquipeController(new DummyEquipeStore());
         }
 
         [Test]
@@ -63,9 +64,13 @@ namespace UnitTests
         }
 
         [Test]
-        public void Quand_je_rattache_une_équipe_a_la_partie_alors_je_récupere_l_equipe_avec_la_partie()
+        public void Quand_je_cree_une_equipe_je_peux_la_recuperer_avec_un_get()
         {
-            throw new Exception();
+            _tested.Post("A-team", new[] { "Alice", "Bob" });
+            var equipe = _tested.Get("A-team");
+            Assert.That(equipe,Is.Not.Null);
+            Assert.That(equipe.NomEquipe, Is.EqualTo("A-team"));
+
         }
 
         

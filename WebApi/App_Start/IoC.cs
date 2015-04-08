@@ -32,7 +32,7 @@ namespace WebApi
             var developpeurStore = new DeveloppeurStore();
             builder.RegisterInstance(developpeurStore);
 
-            var partieStore = new PartieStore();
+            var partieStore = new ProjetStore();
             builder.RegisterInstance(partieStore).AsImplementedInterfaces();
 
             

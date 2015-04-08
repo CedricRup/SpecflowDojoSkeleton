@@ -79,21 +79,21 @@ this.ScenarioSetup(scenarioInfo);
                         "Souscrire un contrat",
                         "2"});
 #line 5
- testRunner.Given("les stories suivantes", ((string)(null)), table1, "Etant donné ");
+ testRunner.Given("le projet \'Crocto\' avec les stories suivantes", ((string)(null)), table1, "Etant donné ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Nom"});
             table2.AddRow(new string[] {
                         "Alice"});
-#line 8
- testRunner.And("l\'équipe \"A-team\" est constituée de", ((string)(null)), table2, "Et ");
-#line 11
- testRunner.And("l\'équipe \"A-team\" travaille sur la partie", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line 9
+ testRunner.Given("l\'équipe \"A-team\" est constituée de", ((string)(null)), table2, "Soit ");
 #line 13
- testRunner.And("que la partie est commencée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line 14
- testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+ testRunner.And("l\'équipe \"A-team\" travaille sur le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 15
+ testRunner.When("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
+#line 17
+ testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line 18
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -102,7 +102,7 @@ this.ScenarioSetup(scenarioInfo);
             table3.AddRow(new string[] {
                         "Souscrire un contrat",
                         "1"});
-#line 16
+#line 19
  testRunner.Then("les stories sont dans l\'état suivant", ((string)(null)), table3, "Alors ");
 #line hidden
             this.ScenarioCleanup();
@@ -113,7 +113,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void UneStoryEstTermineeLorsqueSaChargeAtteint0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Une story est terminée lorsque sa charge atteint 0", ((string[])(null)));
-#line 20
+#line 23
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -125,20 +125,20 @@ this.ScenarioSetup(scenarioInfo);
             table4.AddRow(new string[] {
                         "Déclarer un sinistre",
                         "2"});
-#line 22
+#line 25
  testRunner.Given("les stories suivantes", ((string)(null)), table4, "Etant donné ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                         "Nom"});
             table5.AddRow(new string[] {
                         "Alice"});
-#line 26
- testRunner.And("l\'équipe constituée de", ((string)(null)), table5, "Et ");
 #line 29
- testRunner.And("que la partie est commencée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line 30
+ testRunner.Given("l\'équipe \"A-team\" est constituée de", ((string)(null)), table5, "Soit ");
+#line 33
+ testRunner.When("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
+#line 34
  testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
-#line 31
+#line 35
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -147,7 +147,7 @@ this.ScenarioSetup(scenarioInfo);
             table6.AddRow(new string[] {
                         "Déclarer un sinistre",
                         "2"});
-#line 32
+#line 36
  testRunner.Then("les stories sont dans l\'état suivant", ((string)(null)), table6, "Alors ");
 #line hidden
             this.ScenarioCleanup();

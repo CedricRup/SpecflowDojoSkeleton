@@ -57,9 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DummyPartyStore.cs" />
+    <Compile Include="AffectationEquipeControllerTests.cs" />
+    <Compile Include="DummyProjetStore.cs" />
     <Compile Include="EquipeControllerTest.cs" />
-    <Compile Include="PartieControllerTests.cs" />
+    <Compile Include="ProjetControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
