@@ -171,6 +171,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AffectationEquipe.cs" />
     <Compile Include="Controllers\AffectationEquipeController.cs" />
+    <Compile Include="Controllers\DailyController.cs" />
     <Compile Include="Controllers\DummyController.cs" />
     <Compile Include="Controllers\EquipeController.cs" />
     <Compile Include="Controllers\ProjetController.cs" />

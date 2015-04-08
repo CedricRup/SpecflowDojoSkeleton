@@ -19,7 +19,7 @@ Scénario: La partie est gagnée si il n'y a plus de story avant la date de rele
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
 	
 	Quand la journée se termine
-	Alors la partie est gagnée
+	Alors le projet est terminé
 
 
 Scénario: La partie est perdue si il reste de la charge le jour de la date de release
@@ -41,4 +41,4 @@ Scénario: La partie est perdue si il reste de la charge le jour de la date de r
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
 	
 	Quand la journée se termine
-	Alors la partie est perdue
+	Alors le projet est en retard

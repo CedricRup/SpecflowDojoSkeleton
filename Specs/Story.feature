@@ -16,7 +16,7 @@ Scénario: Quand un développeur travaille sur une story, ca charge de travaille
 	
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
 	Quand la journée se termine
-	Alors les stories sont dans l'état suivant
+	Alors les stories du projet 'Crocto' sont dans l'état suivant
 	| Intitulé             | Charge |
 	| Souscrire un contrat |     1  |
 
@@ -33,7 +33,7 @@ Scénario: Une story est terminée lorsque sa charge atteint 0
 	Quand je commence le projet 'Crocto'
 	Etant donné que "Alice" travaille sur "Souscrire un contrat"
 	Quand la journée se termine
-	Alors les stories sont dans l'état suivant
+	Alors les stories du projet 'Crocto' sont dans l'état suivant
 	| Intitulé             | Charge |
 	| Déclarer un sinistre |     2  |
 

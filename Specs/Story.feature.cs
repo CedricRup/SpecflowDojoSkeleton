@@ -103,7 +103,7 @@ this.ScenarioSetup(scenarioInfo);
                         "Souscrire un contrat",
                         "1"});
 #line 19
- testRunner.Then("les stories sont dans l\'état suivant", ((string)(null)), table3, "Alors ");
+ testRunner.Then("les stories du projet \'Crocto\' sont dans l\'état suivant", ((string)(null)), table3, "Alors ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -148,7 +148,7 @@ this.ScenarioSetup(scenarioInfo);
                         "Déclarer un sinistre",
                         "2"});
 #line 36
- testRunner.Then("les stories sont dans l\'état suivant", ((string)(null)), table6, "Alors ");
+ testRunner.Then("les stories du projet \'Crocto\' sont dans l\'état suivant", ((string)(null)), table6, "Alors ");
 #line hidden
             this.ScenarioCleanup();
         }

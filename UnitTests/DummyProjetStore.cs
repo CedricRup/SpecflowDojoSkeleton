@@ -36,4 +36,12 @@ namespace UnitTests
             return _store.FirstOrDefault(p => p.NomEquipe == nom);
         }
     }
+
+    public class DummyDailyStore : DummyStore<Daily>, IDailyStore
+    {
+        public Daily Get(string nomProjet, DateTime jour)
+        {
+            return _store.FirstOrDefault(d => d.Date == jour && d.Projet == nomProjet);
+        }
+    }
 }
