@@ -5,7 +5,7 @@ using Model;
 
 namespace WebApi.Controllers
 {
-    public class EquipeController
+    public class EquipeController : ApiController
     {
         private readonly IEquipeStore _store;
 
@@ -14,13 +14,13 @@ namespace WebApi.Controllers
             _store = store;
         }
 
-        public Equipe Post(string nom, string[] nomsDeveloppeurs)
+        public Equipe Post([FromBody]NouvelleEquipe nouvelleEquipe)
         {
-            if (nom == null || nomsDeveloppeurs.Length == 0)
+            if (nouvelleEquipe.Nom == null || nouvelleEquipe.NomsDeveloppeurs.Length == 0)
             {
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
             }
-            var equipe = new Equipe(nom,nomsDeveloppeurs);
+            var equipe = new Equipe(nouvelleEquipe.Nom,nouvelleEquipe.NomsDeveloppeurs);
             _store.Register(equipe);
             return equipe;
         }

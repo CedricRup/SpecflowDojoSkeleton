@@ -3,7 +3,7 @@
 Scénario: La partie est gagnée si il n'y a plus de story avant la date de release
 
 	Etant donné le projet 'Crocto' avec les stories suivantes
-	| Intitulé             | Charge |
+	| Titre             | Charge |
 	| Souscrire un contrat |     1  |
 	Et la date de démarrage du projet 'Crocto' est au 17/08/2014
 	Et la date de release du projet 'Crocto' est au 17/08/2015
@@ -25,7 +25,7 @@ Scénario: La partie est gagnée si il n'y a plus de story avant la date de rele
 Scénario: La partie est perdue si il reste de la charge le jour de la date de release
 
 	Etant donné le projet 'Crocto' avec les stories suivantes
-	| Intitulé             | Charge |
+	| Titre             | Charge |
 	| Souscrire un contrat |     2  |
 	Et la date de démarrage du projet 'Crocto' est au 16/08/2015
 	Et la date de release du projet 'Crocto' est au 17/08/2015

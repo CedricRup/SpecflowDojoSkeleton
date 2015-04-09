@@ -8,15 +8,6 @@ using WebApi.Controllers;
 namespace UnitTests
 {
 
-    /* Quand je crée un projet je récupére un objet non null
-     * Quand je crée un projet elle a un id
-     * Je peux crée un projet avec un date de relase
-     * Si je crée un projet sans date de release j'ai une erreur
-     * Je peux créer un projet en spécifiant la date du jour
-     * Si je crée un projet sans date du jour j'ai une erreur
-     * Si je crée un projet sans story,  j'ai une erreur
-     * */
-
     [TestFixture]
     public class ProjetControllerTests
     {

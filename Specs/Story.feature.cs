@@ -73,7 +73,7 @@ namespace Specs
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Intitulé",
+                        "Titre",
                         "Charge"});
             table1.AddRow(new string[] {
                         "Souscrire un contrat",
@@ -90,7 +90,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.And("l\'équipe \"A-team\" travaille sur le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 15
- testRunner.When("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
+ testRunner.And("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 17
  testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
 #line 18
@@ -117,7 +117,7 @@ this.ScenarioSetup(scenarioInfo);
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Intitulé",
+                        "Titre",
                         "Charge"});
             table4.AddRow(new string[] {
                         "Souscrire un contrat",
@@ -135,14 +135,14 @@ this.ScenarioSetup(scenarioInfo);
 #line 29
  testRunner.Given("l\'équipe \"A-team\" est constituée de", ((string)(null)), table5, "Soit ");
 #line 33
- testRunner.When("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
+ testRunner.And("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 34
  testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
 #line 35
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Intitulé",
+                        "Titre",
                         "Charge"});
             table6.AddRow(new string[] {
                         "Déclarer un sinistre",

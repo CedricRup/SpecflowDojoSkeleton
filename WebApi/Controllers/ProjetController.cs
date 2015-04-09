@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Net;
 using System.Web.Http;
 using Database;
@@ -32,21 +31,5 @@ namespace WebApi.Controllers
         {
             return _projetStore.Get(nom);
         }
-    }
-
-
-
-    public class NouveauProjet
-    {
-        public DateTime? DateDeRelease { get; set; }
-        public DateTime? DateDeDebut { get; set; }
-        public StoryParam[] Stories { get; set; }
-        public string Nom { get; set; }
-    }
-
-    public class StoryParam
-    {
-        public string Titre { get; set; }
-        public int Charge { get; set; }
     }
 }

@@ -73,7 +73,7 @@ namespace Specs
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Intitulé",
+                        "Titre",
                         "Charge"});
             table1.AddRow(new string[] {
                         "Souscrire un contrat",
@@ -114,7 +114,7 @@ this.ScenarioSetup(scenarioInfo);
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Intitulé",
+                        "Titre",
                         "Charge"});
             table3.AddRow(new string[] {
                         "Souscrire un contrat",

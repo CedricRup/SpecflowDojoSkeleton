@@ -211,6 +211,10 @@
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ApiClient\ApiClient.csproj">
+      <Project>{557b4721-2056-4868-8713-da9d0b7f2a22}</Project>
+      <Name>ApiClient</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Database\Database.csproj">
       <Project>{84098A2C-1B53-44F9-AC60-B984009F63E0}</Project>
       <Name>Database</Name>
