@@ -6,36 +6,34 @@ Scénario: Quand un développeur travaille sur une story, ca charge de travaille
 	| Titre                | Charge |
 	| Souscrire un contrat | 2      |
 	
-	Soit l'équipe "A-team" est constituée de 
+	Soit l'équipe 'A-team' est constituée de 
 	| Nom   |
 	| Alice |
 
-	Et l'équipe "A-team" travaille sur le projet 'Crocto'
+	Et l'équipe 'A-team' travaille sur le projet 'Crocto'
 
-	Et je commence le projet 'Crocto'
-	
-	Etant donné que "Alice" travaille sur "Souscrire un contrat"
+	Etant donné le daily pour le projet 'Crocto'
+	Etant donné que 'Alice' travaille sur 'Souscrire un contrat'
 	Quand la journée se termine
 	Alors les stories du projet 'Crocto' sont dans l'état suivant
-	| Intitulé             | Charge |
-	| Souscrire un contrat |     1  |
+	| Titre                | Charge |
+	| Souscrire un contrat | 1      |
 
 Scénario: Une story est terminée lorsque sa charge atteint 0
 
-	Etant donné les stories suivantes
-	| Titre             | Charge |
-	| Souscrire un contrat |     1  |
-	| Déclarer un sinistre |     2  |
-	Soit l'équipe "A-team" est constituée de 
+	Etant donné le projet 'Crocto' avec les stories suivantes
+	| Titre                | Charge |
+	| Souscrire un contrat | 1      |
+	| Déclarer un sinistre | 2      |
+	Soit l'équipe 'A-team' est constituée de 
 	| Nom   |
 	| Alice |
 
-	Et je commence le projet 'Crocto'
-	Etant donné que "Alice" travaille sur "Souscrire un contrat"
+	Etant donné que 'Alice' travaille sur 'Souscrire un contrat'
 	Quand la journée se termine
 	Alors les stories du projet 'Crocto' sont dans l'état suivant
-	| Titre             | Charge |
-	| Déclarer un sinistre |     2  |
+	| Titre                | Charge |
+	| Déclarer un sinistre | 2      |
 
 
 	   

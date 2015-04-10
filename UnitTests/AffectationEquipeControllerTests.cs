@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
+using ApiClient;
 using Model;
 using NUnit.Framework;
 using WebApi.Controllers;

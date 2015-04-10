@@ -88,6 +88,7 @@
     </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\DailySteps.cs" />
     <Compile Include="Steps\EquipeSteps.cs" />
     <Compile Include="Steps\ProjetSteps.cs" />
     <Compile Include="Steps\WebClientContext.cs" />

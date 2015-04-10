@@ -35,7 +35,12 @@ namespace WebApi
             var partieStore = new ProjetStore();
             builder.RegisterInstance(partieStore).AsImplementedInterfaces();
 
-            
+            var equipeStore = new EquipeStore();
+            builder.RegisterInstance(equipeStore).AsImplementedInterfaces();
+
+            var dailyStore = new DailyStore();
+            builder.RegisterInstance(dailyStore).AsImplementedInterfaces();
+
             var dummyStore = new DummyStore();
             dummyStore.Register(new Dummy{Name = "Franklin"});
             builder.RegisterInstance(dummyStore);

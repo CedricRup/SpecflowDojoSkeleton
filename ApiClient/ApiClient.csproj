@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AffectationEquipe.cs" />
+    <Compile Include="ProjetJson.cs" />
+    <Compile Include="StoryJson.cs" />
     <Compile Include="V1Client.cs" />
     <Compile Include="NouveauProjet.cs" />
     <Compile Include="NouvelleEquipe.cs" />

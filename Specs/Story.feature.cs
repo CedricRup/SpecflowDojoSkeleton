@@ -86,23 +86,23 @@ this.ScenarioSetup(scenarioInfo);
             table2.AddRow(new string[] {
                         "Alice"});
 #line 9
- testRunner.Given("l\'équipe \"A-team\" est constituée de", ((string)(null)), table2, "Soit ");
+ testRunner.Given("l\'équipe \'A-team\' est constituée de", ((string)(null)), table2, "Soit ");
 #line 13
- testRunner.And("l\'équipe \"A-team\" travaille sur le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+ testRunner.And("l\'équipe \'A-team\' travaille sur le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 15
- testRunner.And("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+ testRunner.Given("le daily pour le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line 16
+ testRunner.Given("que \'Alice\' travaille sur \'Souscrire un contrat\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
 #line 17
- testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
-#line 18
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Intitulé",
+                        "Titre",
                         "Charge"});
             table3.AddRow(new string[] {
                         "Souscrire un contrat",
                         "1"});
-#line 19
+#line 18
  testRunner.Then("les stories du projet \'Crocto\' sont dans l\'état suivant", ((string)(null)), table3, "Alors ");
 #line hidden
             this.ScenarioCleanup();
@@ -113,7 +113,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void UneStoryEstTermineeLorsqueSaChargeAtteint0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Une story est terminée lorsque sa charge atteint 0", ((string[])(null)));
-#line 23
+#line 22
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -125,20 +125,18 @@ this.ScenarioSetup(scenarioInfo);
             table4.AddRow(new string[] {
                         "Déclarer un sinistre",
                         "2"});
-#line 25
- testRunner.Given("les stories suivantes", ((string)(null)), table4, "Etant donné ");
+#line 24
+ testRunner.Given("le projet \'Crocto\' avec les stories suivantes", ((string)(null)), table4, "Etant donné ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                         "Nom"});
             table5.AddRow(new string[] {
                         "Alice"});
-#line 29
- testRunner.Given("l\'équipe \"A-team\" est constituée de", ((string)(null)), table5, "Soit ");
+#line 28
+ testRunner.Given("l\'équipe \'A-team\' est constituée de", ((string)(null)), table5, "Soit ");
+#line 32
+ testRunner.Given("que \'Alice\' travaille sur \'Souscrire un contrat\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
 #line 33
- testRunner.And("je commence le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line 34
- testRunner.Given("que \"Alice\" travaille sur \"Souscrire un contrat\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
-#line 35
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -147,7 +145,7 @@ this.ScenarioSetup(scenarioInfo);
             table6.AddRow(new string[] {
                         "Déclarer un sinistre",
                         "2"});
-#line 36
+#line 34
  testRunner.Then("les stories du projet \'Crocto\' sont dans l\'état suivant", ((string)(null)), table6, "Alors ");
 #line hidden
             this.ScenarioCleanup();

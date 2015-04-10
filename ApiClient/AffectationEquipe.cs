@@ -1,4 +1,4 @@
-namespace WebApi.Controllers
+namespace ApiClient
 {
     public class AffectationEquipe
     {

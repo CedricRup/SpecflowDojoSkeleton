@@ -1,12 +1,13 @@
 using System;
 using System.Net;
 using System.Net.Http;
+using System.Web.Http;
 using Database;
 using Model;
 
 namespace WebApi.Controllers
 {
-    public class DailyController
+    public class DailyController : ApiController
     {
         private readonly IDailyStore _dailyStore;
         private readonly IProjetStore _projectStore;

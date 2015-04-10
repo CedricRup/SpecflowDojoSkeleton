@@ -14,11 +14,10 @@ namespace Specs.Steps
             _client = context.WebClient;
         }
 
-        [Given(@"l'équipe ""(.*)"" est constituée de")]
+        [Given(@"l'équipe '(.*)' est constituée de")]
         public void SoitLEquipeEstConstitueeDe(string nomEquipe, Table table)
         {
             var result = _client.NouvelleEquipe(nomEquipe, table.Rows.Select(r => r["Nom"]).ToArray());
         }
-
     }
 }

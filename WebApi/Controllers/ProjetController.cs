@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Net;
 using System.Web.Http;
+using ApiClient;
 using Database;
 using Model;
 
@@ -15,21 +16,32 @@ namespace WebApi.Controllers
             _projetStore = projetStore;
         }
 
-        public Projet Post(NouveauProjet nouveauProjet)
+        public ProjetJson Post(NouveauProjet nouveauProjet)
         {
             if (nouveauProjet.DateDeRelease == null || nouveauProjet.DateDeDebut == null || !nouveauProjet.Stories.Any())
             {
                 throw  new HttpResponseException(HttpStatusCode.BadRequest);
             }
             var stories = nouveauProjet.Stories.Select(s => new Story(s.Titre,s.Charge));
-            var partie = new Projet(nouveauProjet.Nom,nouveauProjet.DateDeDebut.Value,nouveauProjet.DateDeRelease.Value,stories);
-            _projetStore.Register(partie);
-            return partie;
+            var projet = new Projet(nouveauProjet.Nom,nouveauProjet.DateDeDebut.Value,nouveauProjet.DateDeRelease.Value,stories);
+            _projetStore.Register(projet);
+            return ToProjetJson(projet);;
         }
 
-        public Projet Get(string nom)
+        private static ProjetJson ToProjetJson(Projet projet)
         {
-            return _projetStore.Get(nom);
+            return new ProjetJson
+            {
+                Date = projet.Date,
+                DateDeRelease= projet.DateDeRelease,
+                Nom= projet.Nom,
+                Stories=projet.Stories.Select(s=>new StoryJson{Charge=s.Charge,Titre=s.Titre}).ToList()
+            };
+        }
+
+        public ProjetJson Get(string id)
+        {
+            return ToProjetJson(_projetStore.Get(id));
         }
     }
 }
