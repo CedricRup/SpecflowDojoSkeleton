@@ -65,10 +65,12 @@ namespace Specs
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Quand un développeur travaille sur une story, sa charge de travaille diminue")]
-        public virtual void QuandUnDeveloppeurTravailleSurUneStorySaChargeDeTravailleDiminue()
+        [NUnit.Framework.DescriptionAttribute("Quand un développeur travaille sur une story, la charge de travail restante sur l" +
+            "a story diminue")]
+        public virtual void QuandUnDeveloppeurTravailleSurUneStoryLaChargeDeTravailRestanteSurLaStoryDiminue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Quand un développeur travaille sur une story, sa charge de travaille diminue", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Quand un développeur travaille sur une story, la charge de travail restante sur l" +
+                    "a story diminue", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line hidden
@@ -135,8 +137,10 @@ this.ScenarioSetup(scenarioInfo);
 #line 28
  testRunner.Given("l\'équipe \'A-team\' est constituée de", ((string)(null)), table5, "Soit ");
 #line 32
+ testRunner.Given("le daily pour le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line 34
  testRunner.Given("que \'Alice\' travaille sur \'Souscrire un contrat\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
-#line 33
+#line 35
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -145,7 +149,7 @@ this.ScenarioSetup(scenarioInfo);
             table6.AddRow(new string[] {
                         "Déclarer un sinistre",
                         "2"});
-#line 34
+#line 36
  testRunner.Then("les stories du projet \'Crocto\' sont dans l\'état suivant", ((string)(null)), table6, "Alors ");
 #line hidden
             this.ScenarioCleanup();

@@ -1,6 +1,6 @@
 ﻿Fonctionnalité: Développer une story
 
-Scénario: Quand un développeur travaille sur une story, sa charge de travaille diminue
+Scénario: Quand un développeur travaille sur une story, la charge de travail restante sur la story diminue
 
 	Etant donné le projet 'Crocto' avec les stories suivantes
 	| Titre                | Charge |
@@ -29,6 +29,8 @@ Scénario: Une story est terminée lorsque sa charge atteint 0
 	| Nom   |
 	| Alice |
 
+	Etant donné le daily pour le projet 'Crocto'
+	
 	Etant donné que 'Alice' travaille sur 'Souscrire un contrat'
 	Quand la journée se termine
 	Alors les stories du projet 'Crocto' sont dans l'état suivant
