@@ -12,14 +12,14 @@ namespace Specs
     {
         private static IDisposable _server;
 
-        [BeforeTestRun]
-        public static void BeforeTestRun()
+        [BeforeScenario]
+        public static void StartEmbeddedServer()
         {
             _server = WebApp.Start<StartupSpecFlow>("http://localhost:12345");
         }
 
-        [AfterTestRun]
-        public static void AfterTestRun()
+        [AfterScenario]
+        public static void ShutdownEmbeddedServer()
         {
             if (_server != null)
             {
@@ -27,15 +27,6 @@ namespace Specs
             }
         }
 
-        [BeforeScenario]
-        public void BeforeScenario()
-        {
-        }
-
-        [AfterScenario]
-        public void AfterScenario()
-        {
-        }
     }
 
     public class StartupSpecFlow
