@@ -1,6 +1,6 @@
 ﻿Fonctionnalité: Développer une story
 
-Scénario: Quand un développeur travaille sur une story, ca charge de travaille diminue
+Scénario: Quand un développeur travaille sur une story, sa charge de travaille diminue
 
 	Etant donné le projet 'Crocto' avec les stories suivantes
 	| Titre                | Charge |

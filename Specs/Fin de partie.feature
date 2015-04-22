@@ -14,7 +14,6 @@ Scénario: La partie est gagnée si il n'y a plus de story avant la date de rele
 
 	Et l'équipe 'A-Team' travaille sur le projet 'Crocto'
 	
-	
 	Etant donné que 'Alice' travaille sur 'Souscrire un contrat'
 	
 	Quand la journée se termine
