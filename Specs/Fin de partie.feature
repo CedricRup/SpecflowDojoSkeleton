@@ -1,5 +1,7 @@
 ﻿Fonctionnalité: Fin de partie
-	
+
+@US002
+@ignore	
 Scénario: La partie est gagnée si il n'y a plus de story avant la date de release
 
 	Etant donné le projet 'Crocto' avec les stories suivantes
@@ -20,6 +22,8 @@ Scénario: La partie est gagnée si il n'y a plus de story avant la date de rele
 	Alors le projet est terminé
 
 
+@US002
+@ignore	
 Scénario: La partie est perdue si il reste de la charge le jour de la date de release
 
 	Etant donné le projet 'Crocto' avec les stories suivantes
