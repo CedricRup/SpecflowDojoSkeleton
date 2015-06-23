@@ -25,25 +25,18 @@ namespace WebApi
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterApiControllers(typeof (DummyController).Assembly).InstancePerRequest();
+            builder.RegisterApiControllers(typeof (RituelController).Assembly).InstancePerRequest();
             builder.RegisterHttpRequestMessage(configuration);
             builder.Register(ctx => ctx.Resolve<HttpRequestMessage>().GetOwinContext().Authentication).InstancePerRequest();
 
-            var developpeurStore = new DeveloppeurStore();
-            builder.RegisterInstance(developpeurStore);
-
-            var partieStore = new ProjetStore();
+            var partieStore = new RituelStore();
             builder.RegisterInstance(partieStore).AsImplementedInterfaces();
 
-            var equipeStore = new EquipeStore();
+            var equipeStore = new VillageStore();
             builder.RegisterInstance(equipeStore).AsImplementedInterfaces();
 
-            var dailyStore = new DailyStore();
+            var dailyStore = new PlanActionStore();
             builder.RegisterInstance(dailyStore).AsImplementedInterfaces();
-
-            var dummyStore = new DummyStore();
-            dummyStore.Register(new Dummy{Name = "Franklin"});
-            builder.RegisterInstance(dummyStore);
 
             return builder.Build();
         }

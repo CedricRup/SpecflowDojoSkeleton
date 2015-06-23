@@ -88,14 +88,14 @@
     </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\DailySteps.cs" />
-    <Compile Include="Steps\EquipeSteps.cs" />
-    <Compile Include="Steps\ProjetSteps.cs" />
+    <Compile Include="Steps\PlanActionSteps.cs" />
+    <Compile Include="Steps\VillageSteps.cs" />
+    <Compile Include="Steps\RituelSteps.cs" />
     <Compile Include="Steps\WebClientContext.cs" />
-    <Compile Include="Story.feature.cs">
+    <Compile Include="Action.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Story.feature</DependentUpon>
+      <DependentUpon>Action.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -105,9 +105,9 @@
       <LastGenOutput>Fin de partie.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <None Include="Story.feature">
+    <None Include="Action.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Story.feature.cs</LastGenOutput>
+      <LastGenOutput>Action.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

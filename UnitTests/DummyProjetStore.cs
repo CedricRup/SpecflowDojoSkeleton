@@ -21,27 +21,27 @@ namespace UnitTests
         }
     }
 
-    public class DummyProjetStore : DummyStore<Projet>, IProjetStore
+    public class DummyRituelStore : DummyStore<Rituel>, IRituelStore
     {
-        public Projet Get(string nom)
+        public Rituel Get(string nom)
         {
             return _store.FirstOrDefault(p => p.Nom == nom);
         }
     }
 
-    public class DummyEquipeStore : DummyStore<Equipe>, IEquipeStore
+    public class DummyVillageStore : DummyStore<Village>, IVillageStore
     {
-        public Equipe Get(string nom)
+        public Village Get(string nom)
         {
             return _store.FirstOrDefault(p => p.NomEquipe == nom);
         }
     }
 
-    public class DummyDailyStore : DummyStore<Daily>, IDailyStore
+    public class DummyPlanActionStore : DummyStore<PlanAction>, IPlanActionStore
     {
-        public Daily Get(string nomProjet, DateTime jour)
+        public PlanAction Get(string nomProjet, DateTime jour)
         {
-            return _store.FirstOrDefault(d => d.Date == jour && d.Projet == nomProjet);
+            return _store.FirstOrDefault(d => d.Date == jour && d.Rituel == nomProjet);
         }
     }
 }

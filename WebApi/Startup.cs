@@ -17,7 +17,7 @@ namespace WebApi
         public void Configuration(IAppBuilder app, HttpConfiguration configuration)
         {
 
-            System.Diagnostics.Trace.TraceInformation("Démarrage de l'application");
+            //System.Diagnostics.Trace.TraceInformation("Démarrage de l'application");
             
             configuration.SetupIoc();
 
@@ -31,7 +31,7 @@ namespace WebApi
 
             configuration.EnsureInitialized();
 
-            System.Diagnostics.Trace.TraceInformation("Démarrage OK");
+            //System.Diagnostics.Trace.TraceInformation("Démarrage OK");
         }
     }
 }

@@ -65,87 +65,103 @@ namespace Specs
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("La partie est gagnée si il n\'y a plus de story avant la date de release")]
+        [NUnit.Framework.DescriptionAttribute("La partie est gagnée si il n\'y a plus d\'action avant l\'échéance")]
         [NUnit.Framework.IgnoreAttribute()]
         [NUnit.Framework.CategoryAttribute("US002")]
-        public virtual void LaPartieEstGagneeSiIlNYAPlusDeStoryAvantLaDateDeRelease()
+        public virtual void LaPartieEstGagneeSiIlNYAPlusDActionAvantLEcheance()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("La partie est gagnée si il n\'y a plus de story avant la date de release", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("La partie est gagnée si il n\'y a plus d\'action avant l\'échéance", new string[] {
                         "US002",
                         "ignore"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Titre",
+                        "Intitule",
                         "Charge"});
             table1.AddRow(new string[] {
-                        "Souscrire un contrat",
+                        "Chasser un éléphant",
                         "1"});
 #line 7
- testRunner.Given("le projet \'Crocto\' avec les stories suivantes", ((string)(null)), table1, "Etant donné ");
-#line 10
- testRunner.And("la date de démarrage du projet \'Crocto\' est au 17/08/2014", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+ testRunner.Given("le rituel \'Crocto\' avec les actions suivantes", ((string)(null)), table1, "Etant donné ");
 #line 11
- testRunner.And("la date de release du projet \'Crocto\' est au 17/08/2015", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+ testRunner.And("la date de démarrage du rituel \'Crocto\' est au 17/08/2014", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line 12
+ testRunner.And("l\'échéance du rituel \'Crocto\' est au 17/08/2015", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Nom"});
             table2.AddRow(new string[] {
                         "Alice"});
-#line 13
- testRunner.And("l\'équipe \'A-Team\' est constituée de", ((string)(null)), table2, "Et ");
-#line 17
- testRunner.And("l\'équipe \'A-Team\' travaille sur le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line 15
+ testRunner.And("le village \'Petibonum\' habité par", ((string)(null)), table2, "Et ");
 #line 19
- testRunner.Given("que \'Alice\' travaille sur \'Souscrire un contrat\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+ testRunner.And("le village \'Petibonum\' effectue le rituel \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Villageois",
+                        "Action"});
+            table3.AddRow(new string[] {
+                        "Alice",
+                        "Chassez un éléphant"});
 #line 21
+ testRunner.Given("le plan d\'action pour le rituel \'Crocto\'", ((string)(null)), table3, "Etant donné ");
+#line 25
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
-#line 22
- testRunner.Then("le projet est terminé", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
+#line 26
+ testRunner.Then("le rituel est complété", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
+#line 27
+ testRunner.And("la partie est gangnée", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("La partie est perdue si il reste de la charge le jour de la date de release")]
+        [NUnit.Framework.DescriptionAttribute("La partie est perdue si il reste de la charge le jour de l\'échéance")]
         [NUnit.Framework.IgnoreAttribute()]
         [NUnit.Framework.CategoryAttribute("US002")]
-        public virtual void LaPartieEstPerdueSiIlResteDeLaChargeLeJourDeLaDateDeRelease()
+        public virtual void LaPartieEstPerdueSiIlResteDeLaChargeLeJourDeLEcheance()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("La partie est perdue si il reste de la charge le jour de la date de release", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("La partie est perdue si il reste de la charge le jour de l\'échéance", new string[] {
                         "US002",
                         "ignore"});
-#line 27
+#line 31
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Titre",
-                        "Charge"});
-            table3.AddRow(new string[] {
-                        "Souscrire un contrat",
-                        "2"});
-#line 29
- testRunner.Given("le projet \'Crocto\' avec les stories suivantes", ((string)(null)), table3, "Etant donné ");
-#line 32
- testRunner.And("la date de démarrage du projet \'Crocto\' est au 16/08/2015", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line 33
- testRunner.And("la date de release du projet \'Crocto\' est au 17/08/2015", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
-#line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Nom"});
+                        "Intitule",
+                        "Charge"});
             table4.AddRow(new string[] {
+                        "Chasser un éléphant",
+                        "2"});
+#line 33
+testRunner.Given("le rituel \'Crocto\' avec les actions suivantes", ((string)(null)), table4, "Etant donné ");
+#line 37
+ testRunner.And("la date de démarrage du rituel \'Crocto\' est au 17/08/2014", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line 38
+ testRunner.And("l\'échéance du rituel \'Crocto\' est au 17/08/2015", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Nom"});
+            table5.AddRow(new string[] {
                         "Alice"});
-#line 35
- testRunner.And("l\'équipe \'A-Team\' est constituée de", ((string)(null)), table4, "Et ");
-#line 39
- testRunner.And("l\'équipe \'A-Team\' travaille sur le projet \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
 #line 41
- testRunner.Given("que \'Alice\' travaille sur \'Souscrire un contrat\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
-#line 43
+ testRunner.And("le village \'Petibonum\' habité par", ((string)(null)), table5, "Et ");
+#line 45
+ testRunner.And("le village \'Petibonum\' effectue le rituel \'Crocto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et ");
+#line hidden
+            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Villageois",
+                        "Action"});
+            table6.AddRow(new string[] {
+                        "Alice",
+                        "Chassez un éléphant"});
+#line 47
+ testRunner.Given("le plan d\'action pour le rituel \'Crocto\'", ((string)(null)), table6, "Etant donné ");
+#line 51
  testRunner.When("la journée se termine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
-#line 44
- testRunner.Then("le projet est en retard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
+#line 52
+ testRunner.Then("la partie est perdue car le rituel n\'est pas complété", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
 #line hidden
             this.ScenarioCleanup();
         }

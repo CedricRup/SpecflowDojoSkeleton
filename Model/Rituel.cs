@@ -4,20 +4,20 @@ using System.Linq;
 
 namespace Model
 {
-    public class Projet
+    public class Rituel
     {
-        private List<Story> _stories; 
-        public Projet(string nom,DateTime dateDeDebut, DateTime dateDeRelease, IEnumerable<Story> stories)
+        private List<Action> _actions; 
+        public Rituel(string nom,DateTime dateDeDebut, DateTime dateDeRelease, IEnumerable<Action> actions)
         {
             Nom = nom;
             DateDeRelease = dateDeRelease;
-            _stories = stories.ToList();
+            _actions = actions.ToList();
             Date = dateDeDebut;
         }
 
         public DateTime DateDeRelease { get; private set; }
         public DateTime Date { get; private set; }
-        public IEnumerable<Story> Stories { get { return _stories; }}
+        public IEnumerable<Action> Actions { get { return _actions; }}
         public string Nom { get; set; }
     }
 }

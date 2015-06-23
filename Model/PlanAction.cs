@@ -2,9 +2,9 @@
 
 namespace Model
 {
-    public class Daily
+    public class PlanAction
     {
-        public string Projet { get; set; }
+        public string Rituel { get; set; }
         public Tache[] Taches { get; set; }
         public DateTime Date { get; set; }
     }

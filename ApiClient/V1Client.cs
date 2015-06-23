@@ -14,45 +14,39 @@ namespace ApiClient
             _client = new RestClient {BaseUrl = adresse};
         }
 
-        public Dummy GetDummy()
+        public IRestResponse NouveauVillage(string nomEquipe, string[] nomsMembres)
         {
-            var restRequest = new RestRequest("Dummy",Method.GET) {RequestFormat = DataFormat.Json};
-            return  _client.Execute<Dummy>(restRequest).Data;
-        }
-
-        public IRestResponse NouvelleEquipe(string nomEquipe, string[] nomsMembres)
-        {
-            var restRequest = new RestRequest("Equipe", Method.POST) { RequestFormat = DataFormat.Json };
-            restRequest.AddBody(new NouvelleEquipe(nomEquipe, nomsMembres));
+            var restRequest = new RestRequest("Village", Method.POST) { RequestFormat = DataFormat.Json };
+            restRequest.AddBody(new NouveauVillage(nomEquipe, nomsMembres));
             return _client.Execute(restRequest);
         }
 
-        public IRestResponse NouveauProjet(NouveauProjet projet)
+        public IRestResponse NouveauRituel(NouveauRituel rituel)
         {
-            var restRequest = new RestRequest("Projet", Method.POST) { RequestFormat = DataFormat.Json };
-            restRequest.AddBody(projet);
+            var restRequest = new RestRequest("Rituel", Method.POST) { RequestFormat = DataFormat.Json };
+            restRequest.AddBody(rituel);
             return _client.Execute(restRequest);
         }
 
-        public IRestResponse AffecterEquipe(string equipe, string projet)
+        public IRestResponse AffecterVillage(string equipe, string projet)
         {
-            var restRequest = new RestRequest("AffectationEquipe", Method.POST) { RequestFormat = DataFormat.Json };
-            restRequest.AddBody(new AffectationEquipe{NomEquipe = equipe,NomProjet = projet});
+            var restRequest = new RestRequest("AffectationVillage", Method.POST) { RequestFormat = DataFormat.Json };
+            restRequest.AddBody(new AffectationVillage{NomVillage = equipe,NomRituel = projet});
             return _client.Execute(restRequest);
         }
 
-        public IRestResponse PosterDaily(Daily daily)
+        public IRestResponse PosterPlanAction(PlanAction planAction)
         {
-            var restRequest = new RestRequest("Daily", Method.POST) { RequestFormat = DataFormat.Json };
-            restRequest.AddBody(daily);
+            var restRequest = new RestRequest("PlanAction", Method.POST) { RequestFormat = DataFormat.Json };
+            restRequest.AddBody(planAction);
             return _client.Execute(restRequest);
         }
 
-        public IRestResponse<ProjetJson> RecupererProjet(string projet)
+        public IRestResponse<RituelJson> RecupererRituel(string projet)
         {
-            var restRequest = new RestRequest("Projet/{nomProjet}", Method.GET) { RequestFormat = DataFormat.Json };
-            restRequest.AddParameter("nomProjet", projet, ParameterType.UrlSegment);
-            return _client.Execute<ProjetJson>(restRequest);
+            var restRequest = new RestRequest("Rituel/{nomRituel}", Method.GET) { RequestFormat = DataFormat.Json };
+            restRequest.AddParameter("nomRituel", projet, ParameterType.UrlSegment);
+            return _client.Execute<RituelJson>(restRequest);
         }
     }
 }

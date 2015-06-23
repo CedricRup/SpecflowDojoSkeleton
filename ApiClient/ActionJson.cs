@@ -1,8 +1,8 @@
 ﻿namespace ApiClient
 {
-    public class StoryJson
+    public class ActionJson
     {
         public int Charge { get; set; }
-        public string Titre { get; set; }
+        public string Intitule { get; set; }
     }
 }

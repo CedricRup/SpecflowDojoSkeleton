@@ -2,43 +2,53 @@
 
 @US002
 @ignore	
-Scénario: La partie est gagnée si il n'y a plus de story avant la date de release
+Scénario: La partie est gagnée si il n'y a plus d'action avant l'échéance
 
-	Etant donné le projet 'Crocto' avec les stories suivantes
-	| Titre                | Charge |
-	| Souscrire un contrat | 1      |
-	Et la date de démarrage du projet 'Crocto' est au 17/08/2014
-	Et la date de release du projet 'Crocto' est au 17/08/2015
+	Etant donné le rituel 'Crocto' avec les actions suivantes
+	| Intitule            | Charge |
+	| Chasser un éléphant | 1      |
 
-	Et l'équipe 'A-Team' est constituée de 
+	Et la date de démarrage du rituel 'Crocto' est au 17/08/2014
+	Et l'échéance du rituel 'Crocto' est au 17/08/2015
+
+		
+	Et le village 'Petibonum' habité par
 	| Nom   |
 	| Alice |
 
-	Et l'équipe 'A-Team' travaille sur le projet 'Crocto'
-	
-	Etant donné que 'Alice' travaille sur 'Souscrire un contrat'
-	
-	Quand la journée se termine
-	Alors le projet est terminé
+	Et le village 'Petibonum' effectue le rituel 'Crocto'
 
+	Etant donné le plan d'action pour le rituel 'Crocto'
+	| Villageois | Action              |
+	| Alice      | Chassez un éléphant |
+
+	Quand la journée se termine
+	Alors le rituel est complété
+	Et la partie est gangnée
 
 @US002
 @ignore	
-Scénario: La partie est perdue si il reste de la charge le jour de la date de release
+Scénario: La partie est perdue si il reste de la charge le jour de l'échéance
 
-	Etant donné le projet 'Crocto' avec les stories suivantes
-	| Titre             | Charge |
-	| Souscrire un contrat |     2  |
-	Et la date de démarrage du projet 'Crocto' est au 16/08/2015
-	Et la date de release du projet 'Crocto' est au 17/08/2015
+Etant donné le rituel 'Crocto' avec les actions suivantes
+	| Intitule            | Charge |
+	| Chasser un éléphant | 2      |
 
-	Et l'équipe 'A-Team' est constituée de 
+	Et la date de démarrage du rituel 'Crocto' est au 17/08/2014
+	Et l'échéance du rituel 'Crocto' est au 17/08/2015
+
+		
+	Et le village 'Petibonum' habité par
 	| Nom   |
 	| Alice |
 
-	Et l'équipe 'A-Team' travaille sur le projet 'Crocto'
-	
-	Etant donné que 'Alice' travaille sur 'Souscrire un contrat'
-	
+	Et le village 'Petibonum' effectue le rituel 'Crocto'
+
+	Etant donné le plan d'action pour le rituel 'Crocto'
+	| Villageois | Action              |
+	| Alice      | Chassez un éléphant |
+
 	Quand la journée se termine
-	Alors le projet est en retard
+	Alors la partie est perdue car le rituel n'est pas complété
+
+	

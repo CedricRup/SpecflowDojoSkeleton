@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace ApiClient
 {
-    public class ProjetJson
+    public class RituelJson
     {
-        public DateTime DateDeRelease { get; set; }
+        public DateTime Echeance { get; set; }
         public string Nom { get; set; }
-        public List<StoryJson> Stories { get; set; }
+        public List<ActionJson> Actions { get; set; }
         public DateTime Date { get; set; }
     }
 }

@@ -57,11 +57,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AffectationEquipeControllerTests.cs" />
-    <Compile Include="DailyControllerTests.cs" />
+    <Compile Include="AffectationVillageControllerTests.cs" />
+    <Compile Include="PlanActionControllerTests.cs" />
     <Compile Include="DummyProjetStore.cs" />
-    <Compile Include="EquipeControllerTest.cs" />
-    <Compile Include="ProjetControllerTests.cs" />
+    <Compile Include="VillageControllerTest.cs" />
+    <Compile Include="RituelControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

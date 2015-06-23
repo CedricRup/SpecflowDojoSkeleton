@@ -1,12 +1,13 @@
 ﻿using System;
+using ApiClient;
 
 namespace WebApi.Controllers
 {
-    public class NouveauProjet
+    public class NouveauRituel
     {
-        public DateTime? DateDeRelease { get; set; }
+        public DateTime? Echeance { get; set; }
         public DateTime? DateDeDebut { get; set; }
-        public StoryParam[] Stories { get; set; }
+        public ActionJson[] Actions { get; set; }
         public string Nom { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class Tache
     {
-        public string Story { get; set; }
+        public string Action { get; set; }
         public string Par { get; set; }
     }
 }
