@@ -20,7 +20,7 @@ Scénario: La partie est gagnée si il n'y a plus d'action avant l'échéance
 
 	Etant donné le plan d'action pour le rituel 'Crocto'
 	| Villageois | Action              |
-	| Alice      | Chassez un éléphant |
+	| Alice      | Chasser un éléphant |
 
 	Quand la journée se termine
 	Alors le rituel est complété
@@ -46,7 +46,7 @@ Etant donné le rituel 'Crocto' avec les actions suivantes
 
 	Etant donné le plan d'action pour le rituel 'Crocto'
 	| Villageois | Action              |
-	| Alice      | Chassez un éléphant |
+	| Alice      | Chasser un éléphant |
 
 	Quand la journée se termine
 	Alors la partie est perdue car le rituel n'est pas complété

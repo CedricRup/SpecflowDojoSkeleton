@@ -15,7 +15,7 @@ Scénario: Quand un villageois travaille sur une action, la charge de travail re
 
 	Etant donné le plan d'action pour le rituel 'Crocto'
 	| Villageois | Action              |
-	| Alice      | Chassez un éléphant |
+	| Alice      | Chasser un éléphant |
 
 	Quand la journée se termine
 	Alors les actions pour le rituel 'Crocto' sont dans l'état suivant

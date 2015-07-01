@@ -99,7 +99,7 @@ this.ScenarioSetup(scenarioInfo);
                         "Action"});
             table3.AddRow(new string[] {
                         "Alice",
-                        "Chassez un éléphant"});
+                        "Chasser un éléphant"});
 #line 16
  testRunner.Given("le plan d\'action pour le rituel \'Crocto\'", ((string)(null)), table3, "Etant donné ");
 #line 20
