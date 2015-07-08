@@ -33,7 +33,7 @@ namespace UnitTests
     {
         public Village Get(string nom)
         {
-            return _store.FirstOrDefault(p => p.NomEquipe == nom);
+            return _store.FirstOrDefault(p => p.NomVillage == nom);
         }
     }
 

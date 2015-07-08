@@ -20,9 +20,9 @@ namespace WebApi.Controllers
             {
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
             }
-            var equipe = new Village(nouveauVillage.Nom,nouveauVillage.NomsVillageois);
-            _store.Register(equipe);
-            return equipe;
+            var village = new Village(nouveauVillage.Nom,nouveauVillage.NomsVillageois);
+            _store.Register(village);
+            return village;
         }
 
         public Village Get(string id)

@@ -5,13 +5,13 @@ namespace Model
 {
     public class Village
     {   
-        public Village(string nomEquipe, params string[] nomDeveloppeurs)
+        public Village(string nomVillage, params string[] nomVillageois)
         {
-            NomEquipe = nomEquipe;
-            Villageois = nomDeveloppeurs.Select(nomDev => new Villageois(nomDev)).ToList();
+            NomVillage = nomVillage;
+            Villageois = nomVillageois.Select(nom => new Villageois(nom)).ToList();
         }
 
-        public string NomEquipe { get; private set; }
+        public string NomVillage { get; private set; }
         public List<Villageois> Villageois { get; private set; }
         public string RituelId { get; private set; }
 

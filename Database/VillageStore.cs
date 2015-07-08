@@ -7,7 +7,7 @@ namespace Database
     {
         public Village Get(string nom)
         {
-            return GetAll().FirstOrDefault(p => p.NomEquipe == nom);
+            return GetAll().FirstOrDefault(p => p.NomVillage == nom);
         }
     }
 }

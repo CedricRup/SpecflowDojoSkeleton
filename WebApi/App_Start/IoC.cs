@@ -32,8 +32,8 @@ namespace WebApi
             var partieStore = new RituelStore();
             builder.RegisterInstance(partieStore).AsImplementedInterfaces();
 
-            var equipeStore = new VillageStore();
-            builder.RegisterInstance(equipeStore).AsImplementedInterfaces();
+            var villageStore = new VillageStore();
+            builder.RegisterInstance(villageStore).AsImplementedInterfaces();
 
             var dailyStore = new PlanActionStore();
             builder.RegisterInstance(dailyStore).AsImplementedInterfaces();

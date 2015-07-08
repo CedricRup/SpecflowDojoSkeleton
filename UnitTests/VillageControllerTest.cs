@@ -62,7 +62,7 @@ namespace UnitTests
             _tested.Post(new NouveauVillage("A-team", new[] { "Alice", "Bob" }));
             var village = _tested.Get("A-team");
             Assert.That(village,Is.Not.Null);
-            Assert.That(village.NomEquipe, Is.EqualTo("A-team"));
+            Assert.That(village.NomVillage, Is.EqualTo("A-team"));
 
         }
 
