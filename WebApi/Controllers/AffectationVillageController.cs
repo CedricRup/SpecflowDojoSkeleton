@@ -22,19 +22,19 @@ namespace WebApi.Controllers
         public HttpResponseMessage Post(AffectationVillage affectationVillage)
         {
             var projet = _projecStore.Get(affectationVillage.NomRituel);
-            var equipe = _villageStore.Get(affectationVillage.NomVillage);
+            var village = _villageStore.Get(affectationVillage.NomVillage);
             
-            if(projet == null || equipe == null)  return new HttpResponseMessage(HttpStatusCode.NotFound);
-            equipe.PriseEnChargeProjet(affectationVillage.NomRituel);
+            if(projet == null || village == null)  return new HttpResponseMessage(HttpStatusCode.NotFound);
+            village.PriseEnChargeProjet(affectationVillage.NomRituel);
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
 
         public IEnumerable<AffectationVillage> Get()
         {
             return
-                from equipe in _villageStore.GetAll()
-                where equipe.RituelId != null
-                select new AffectationVillage {NomVillage = equipe.NomEquipe, NomRituel = equipe.RituelId};
+                from village in _villageStore.GetAll()
+                where village.RituelId != null
+                select new AffectationVillage {NomVillage = village.NomVillage, NomRituel = village.RituelId};
         }
     }
 }

@@ -8,8 +8,8 @@ Scénario: La partie est gagnée si il n'y a plus d'action avant l'échéance
 	| Intitule            | Charge |
 	| Chasser un éléphant | 1      |
 
-	Et la date de démarrage du rituel 'Crocto' est au 17/08/2014
-	Et l'échéance du rituel 'Crocto' est au 17/08/2015
+	Et la date de démarrage du rituel 'Crocto' est au '17/08/2014'
+	Et l'échéance du rituel 'Crocto' est au '17/08/2015'
 
 		
 	Et le village 'Petibonum' habité par
@@ -24,7 +24,7 @@ Scénario: La partie est gagnée si il n'y a plus d'action avant l'échéance
 
 	Quand la journée se termine
 	Alors le rituel est complété
-	Et la partie est gangnée
+	Et la partie est gagnée
 
 @US002
 @ignore	
@@ -49,6 +49,6 @@ Etant donné le rituel 'Crocto' avec les actions suivantes
 	| Alice      | Chasser un éléphant |
 
 	Quand la journée se termine
-	Alors la partie est perdue car le rituel n'est pas complété
+	Alors la partie est perdue
 
 	

@@ -1,4 +1,4 @@
-﻿Fonctionnalité: Développer une story
+﻿Fonctionnalité: Travailler sur une action
 
 @US001
 Scénario: Quand un villageois travaille sur une action, la charge de travail restante sur l'action diminue

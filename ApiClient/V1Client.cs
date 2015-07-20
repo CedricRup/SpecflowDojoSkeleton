@@ -14,10 +14,10 @@ namespace ApiClient
             _client = new RestClient {BaseUrl = adresse};
         }
 
-        public IRestResponse NouveauVillage(string nomEquipe, string[] nomsMembres)
+        public IRestResponse NouveauVillage(string nom, string[] nomsMembres)
         {
             var restRequest = new RestRequest("Village", Method.POST) { RequestFormat = DataFormat.Json };
-            restRequest.AddBody(new NouveauVillage(nomEquipe, nomsMembres));
+            restRequest.AddBody(new NouveauVillage(nom, nomsMembres));
             return _client.Execute(restRequest);
         }
 
@@ -28,10 +28,10 @@ namespace ApiClient
             return _client.Execute(restRequest);
         }
 
-        public IRestResponse AffecterVillage(string equipe, string projet)
+        public IRestResponse AffecterVillage(string village, string projet)
         {
             var restRequest = new RestRequest("AffectationVillage", Method.POST) { RequestFormat = DataFormat.Json };
-            restRequest.AddBody(new AffectationVillage{NomVillage = equipe,NomRituel = projet});
+            restRequest.AddBody(new AffectationVillage{NomVillage = village,NomRituel = projet});
             return _client.Execute(restRequest);
         }
 

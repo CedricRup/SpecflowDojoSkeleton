@@ -42,9 +42,9 @@ namespace Specs.Steps
 
 
         [Given(@"que '(.*)' travaille sur '(.*)'")]
-        public void SoitQueTravailleSur(string developpeur, string story)
+        public void SoitQueTravailleSur(string villageois, string story)
         {
-            _planAction.Taches = _planAction.Taches.Concat(new[] { new Tache { Par = developpeur, Action = story } }).ToArray();
+            _planAction.Taches = _planAction.Taches.Concat(new[] { new Tache { Par = villageois, Action = story } }).ToArray();
         }
 
 

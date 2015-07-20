@@ -34,9 +34,9 @@ namespace Specs.Steps
         }
 
         [Given(@"le village '(.*)' effectue le rituel '(.*)'")]
-        public void SoitLCrocto(string equipe,string projet)
+        public void SoitLCrocto(string nomVillage, string projet)
         {
-            var result = _client.AffecterVillage(equipe, projet);
+            var result = _client.AffecterVillage(nomVillage, projet);
         }
 
         [Then(@"les actions pour le rituel '(.*)' sont dans l'état suivant")]
